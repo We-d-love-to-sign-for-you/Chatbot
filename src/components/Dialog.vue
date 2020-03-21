@@ -10,15 +10,19 @@
 </template>
 
 <script>
-    export default {
-        name: "Dialog"
-    };
+export default {
+  name: "Dialog"
+};
 </script>
 
 <style scoped>
-  div {
-    width: 200px;
-    height: 400px;
-    background-color: lightgray;
-  }
+div {
+  width: 350px;
+  height: 400px;
+  background-color: lightgray;
+}
+
+div p {
+  font-size: small;
+}
 </style>

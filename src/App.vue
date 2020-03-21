@@ -1,18 +1,18 @@
 <template>
   <div id="app">
-    <Chatbot/>
+    <Chatbot />
   </div>
 </template>
 
 <script>
-import Chatbot from './components/Chatbot.vue'
+import Chatbot from "./components/Chatbot.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     Chatbot
   }
-}
+};
 </script>
 
 <style>
