@@ -1,5 +1,5 @@
 .DS_Store
-node_modules
+demo-chatbot-love2sign4you/node_modules
 /dist
 
 # local env files
