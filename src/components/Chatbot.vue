@@ -1,22 +1,22 @@
 <template>
     <div id="chatbot">
-        <Head/>
+        <ChatbotHead/>
         <Dialog/>
-        <Input/>
+        <ChatbotInput/>
     </div>
 </template>
 
 <script>
-    import Head from "./Head";
+    import ChatbotHead from "./ChatbotHead";
     import Dialog from "./Dialog";
-    import Input from "./Input";
+    import ChatbotInput from "./ChatbotInput";
 
     export default {
         name: "Chatbot",
         components: {
-            Head,
+            ChatbotHead,
             Dialog,
-            Input
+            ChatbotInput
         }
     }
 </script>
