@@ -1,11 +1,11 @@
 {
-  "name": "demo-chatbot-love2sign4you",
+  "name": "demo-chatbot",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "demo-chatbot-love2sign4you/node_modules/.bin/vue-cli-service serve",
-    "build": "demo-chatbot-love2sign4you/node_modules/.bin/vue-cli-service build",
-    "lint": "demo-chatbot-love2sign4you/node_modules/.bin/vue-cli-service lint"
+    "serve": "node_modules/.bin/vue-cli-service serve",
+    "build": "node_modules/.bin/vue-cli-service build",
+    "lint": "node_modules/.bin/vue-cli-service lint"
   },
   "dependencies": {
     "@carbon/vue": "^2.23.1",

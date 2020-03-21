@@ -4,7 +4,12 @@
 
 <script>
     export default {
-        name: "Head"
+        name: "Head",
+        methods: {
+            onClick() {
+
+            }
+        },
     }
 </script>
 
