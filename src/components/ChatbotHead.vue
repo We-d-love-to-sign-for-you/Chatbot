@@ -1,27 +1,26 @@
 <template>
-  <div>
-    <h3>WE'D LOVE TO SIGN FOR YOU</h3>
-  </div>
+  <button @click="onHeadClick">
+    WE'D LOVE TO SIGN FOR YOU
+  </button>
 </template>
 
 <script>
 export default {
   name: "ChatbotHead",
+  data: function() {
+
+  },
   methods: {
-    onClick() {}
+      onHeadClick: function(){
+          this.$emit("headClicked")
+      }
   }
 };
 </script>
 
 <style scoped>
-div {
-  width: 350px;
-  height: 50px;
-  background-color: #4d7ced;
-}
-
-div h3 {
-  padding-top: 5px;
-  font-size: large;
-}
+  button {
+    padding-top: 5px;
+    font-size: large;
+  }
 </style>
