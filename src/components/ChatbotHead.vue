@@ -7,9 +7,6 @@
 <script>
 export default {
   name: "ChatbotHead",
-  data: function() {
-
-  },
   methods: {
       onHeadClick: function(){
           this.$emit("headClicked")
