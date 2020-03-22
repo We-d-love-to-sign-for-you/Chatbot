@@ -16,13 +16,7 @@ export default {
 </script>
 
 <style scoped>
-div {
-  width: 350px;
-  height: 400px;
-  background-color: lightgray;
-}
-
-div p {
-  font-size: small;
-}
+  div p {
+    font-size: small;
+  }
 </style>
