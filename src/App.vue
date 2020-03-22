@@ -6,25 +6,7 @@
 
 <script>
 import Chatbot from "./components/Chatbot.vue";
-import gql from 'graphql-tag';
-
-const LIST_INTERPRETERS = gql`
-query List {
-  listInterpreters {
-    items {
-      id
-      name
-      skills {
-        name
-        level
-      }
-      available
-      email
-      videoLink
-    }
-  }
-}`
-
+import { LIST_INTERPRETERS } from "./queries/interpreter";
 
 export default {
   name: "App",
@@ -32,11 +14,11 @@ export default {
     Chatbot
   },
   apollo: {
-     listInterpreters: {
-       // graphql query
-       query: LIST_INTERPRETERS,
-     },
-   },
+    listInterpreters: {
+      // graphql query
+      query: LIST_INTERPRETERS,
+    },
+  },
 };
 </script>
 
