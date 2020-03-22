@@ -1,22 +1,36 @@
 <template>
   <div>
-    <p>
-      Willkommen! Mit diesem Service möchten wir dir eine/n
-      Gebärdensprachdolmetscher/in zur Verfügung stellen. Klicke auf den Button,
-      um mit einem/einer verfügbaren Gebärdensprachdolmetscher/in verbunden zu
-      werden.
-    </p>
+    <PhraseStart @connectButtonClicked="isConnectButtonClicked = true" />
+    <transition name="fade">
+      <PhraseFound v-show="isConnectButtonClicked" />
+    </transition>
   </div>
 </template>
 
 <script>
+import PhraseStart from "./PhraseStart";
+import PhraseFound from "./PhraseFound";
 export default {
-  name: "Dialog"
+  name: "Dialog",
+  components: {
+    PhraseStart,
+    PhraseFound
+  },
+  data: function() {
+    return {
+      isConnectButtonClicked: false
+    };
+  }
 };
 </script>
 
 <style scoped>
-  div p {
-    font-size: small;
-  }
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 1s;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
 </style>
