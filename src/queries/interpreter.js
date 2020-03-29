@@ -16,4 +16,4 @@ export const LIST_INTERPRETERS = gql`
             }
         }
     }
-`
+`;

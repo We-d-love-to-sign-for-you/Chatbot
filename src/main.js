@@ -11,7 +11,7 @@ Vue.use(VueApollo);
 
 const apolloProvider = new VueApollo({
   defaultClient: client,
-})
+});
 
 new Vue({
   apolloProvider,

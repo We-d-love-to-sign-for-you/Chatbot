@@ -5,14 +5,14 @@
 </template>
 
 <script>
-export default {
-  name: "ChatbotHead",
-  methods: {
-      onHeadClick: function(){
-          this.$emit("headClicked")
+  export default {
+    name: "ChatbotHead",
+    methods: {
+      onHeadClick: function () {
+        this.$emit("headClicked")
       }
-  }
-};
+    }
+  };
 </script>
 
 <style scoped>
